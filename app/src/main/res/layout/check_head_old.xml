@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    style="@style/title_bar_style" >
+
+    <ImageView
+        android:id="@+id/btn_category"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_common"
+        android:padding="0.0dip"
+        android:src="@drawable/btn_category"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/top_head_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/top_head"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/bg_head"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/top_left_count"
+        style="@style/top_update_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-17.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/top_head_container"
+        android:background="@drawable/badge_titlebar"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/top_more"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/right_drawer"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:text="★"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/title_click_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="13.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/title_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/title_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingBottom="1.5dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:text="@string/daily_check" />
+
+            <TextView
+                android:id="@+id/tv_indexOfPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/title"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:paddingLeft="3.0dip">
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/title_text_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

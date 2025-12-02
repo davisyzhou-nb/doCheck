@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zlian.netgap.view.NoScrollGridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ln_content"
+    android:background="@drawable/bg_downline_common"
+    android:drawSelectorOnTop="true"
+    android:gravity="center"
+    android:horizontalSpacing="8dp"
+    android:listSelector="@drawable/activatable_item_background"
+    android:numColumns="4"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="8dp" />

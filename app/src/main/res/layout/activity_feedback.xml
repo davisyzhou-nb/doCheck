@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/feedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="#30469b"
+        android:paddingLeft="13.0dip">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/iv_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sugges_and_feedback"
+            android:textColor="#fff"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_back"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/enter_suggestions_and_feedback"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:layout_below="@id/tv_feedback"
+        android:layout_above="@+id/submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_edit_text" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30469b"
+        android:text="@string/submit"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/et_feedback" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/item_feedback"
+            android:icon="@mipmap/ic_feedback_white"
+            android:title="@string/sugges_and_feedback" />
+        <item
+            android:id="@+id/item_share"
+            android:icon="@mipmap/ic_share_white"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/item_update"
+            android:icon="@mipmap/ic_system_update"
+            android:title="@string/update" />
+        <item
+            android:id="@+id/item_three"
+            android:icon="@mipmap/ic_action_about"
+            android:title="@string/about" />
+    </group>
+</menu>

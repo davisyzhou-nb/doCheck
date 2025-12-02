@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".RecordActivity">
+
+<item android:id="@+id/action_exit"
+    android:title="@string/action_refresh"
+    android:orderInCategory="80"
+    android:icon="@mipmap/ic_action_exit"
+    app:showAsAction="ifRoom"/>
+
+</menu>
